@@ -1,10 +1,10 @@
 import { Helmet } from "react-helmet";
+import { memo, useState } from "react";
+import { Box, Center, Flex, Spacer, VStack } from "@chakra-ui/react";
 
-import { Box, Center, Container, Flex, Spacer, VStack } from "@chakra-ui/react";
 import { Title } from "./components/atom/Title";
 import { Count } from "./components/atom/Count";
 import { PrimaryButton } from "./components/molecules/PrimaryButton";
-import { ChangeEvent, memo, useEffect, useState } from "react";
 
 export const Counter = memo(() => {
     const titleTagText = "Counter";
